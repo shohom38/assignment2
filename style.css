@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topwrap {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#toplogo {
+    font-size: 12px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+#toplogo a{
+    display: block;
+    width: 120px;
+    height: 75px;
+    overflow: hidden;
+    padding-top: 75px;
+    background: url('../assignment/Haitaihtb2010.jpg') 0 0 no-repeat;
+    background-size: 120px auto;
+}
