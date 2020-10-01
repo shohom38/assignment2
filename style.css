@@ -10,7 +10,7 @@ body {
     height: 100%;
     background: url('../assignment2/bg.jpg') 0 0 no-repeat;
     background-size: auto;
-    background-position:  center center;
+    background-position:  center bottom;
 
 }
 
@@ -223,6 +223,12 @@ section {
     color: #9b9b9b;
 }
 
+.main_slogan2 p {
+    font-size: 14px;
+    word-spacing: -.96px;
+    letter-spacing: -1px;
+}
+
 .strongstyle1 {
     line-height: 28px;
     font-size: 22px;
@@ -349,6 +355,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
     color: #7f7f7f;
     font-size: 10px;
 }
@@ -390,3 +397,162 @@ footer ul li a {
 .selectbox_contents span {
     margin-right: 16px;
 }
+
+#tab_contents {
+    border-top: 2px solid #ff9500;
+    border-bottom: 2px solid #ececec;
+    border-left: 2px solid #ececec;
+    border-right: 2px solid #ececec;
+    padding-top: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+h4 {
+    margin-bottom: 16px;
+    padding-bottom: 9px;
+    border-bottom: 1.5px dotted #cacaca;
+    color: #949494;
+    font-size: 15px;
+}
+
+.tracker a  {
+    color: #9b9b9b;
+    text-decoration: none;
+}
+
+.con_box {
+    padding: 15px 20px;
+    background-color: #f4f4f4;
+    margin-bottom:  20px;
+}
+
+.content_box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content_box2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.tracker {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: -1.5px;
+    color: #9b9b9b;
+}
+
+.tracker:not(:last-child) {
+    padding-right: 36px;
+}
+
+.tracker span {
+    font-weight: 800;
+    padding-right: 6px;
+    color: #ff8416;
+}
+
+.tracker2 {
+    padding: 4px 0;
+}
+
+.tracker2:not(:last-child) {
+    padding-right: 50px;
+}
+
+.contents3 {
+    height: 480px;
+    font-size: 11px;
+    overflow: auto;
+    color: #949494;
+}
+
+.title_list {
+    font-weight: 700;
+}
+
+.list_con {
+    margin-top: 22px;
+    line-height: 17px;
+    letter-spacing: -.3px;
+    word-spacing: -1px;
+}
+
+.color_orange {
+    color: #ff9501;
+    margin-bottom: 22px;
+}
+
+dt {
+    font-weight: 700;
+    line-height: 13px;
+}
+
+dd {
+    margin-left: 3px;
+    margin-bottom: 22px;
+}
+
+dd ol {
+    padding-left: 10px;
+    list-style: upper-roman;
+}
+
+dd ul li {
+    list-style: none;
+}
+
+.tab_box {
+    min-width: 670px;
+    min-height: 500px;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    padding: 8px 40px;
+    margin-right: -2px;
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #c1c1c1;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+input:checked + label {
+    background-color: #ff9500;
+    background-image: url('../assignment2/marker4.jpg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto;
+}
+
+#tab_contents2 {
+    border-top: 2px solid #ff9500;
+    border-bottom: 2px solid #ececec;
+    border-left: 2px solid #ececec;
+    border-right: 2px solid #ececec;
+    padding-top: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#tab_contents, #tab_contents2 {
+    display: none;
+}
+
+#tab1:checked ~ #tab_contents, #tab2:checked ~ #tab_contents2 {
+    display: block;
+}
+
