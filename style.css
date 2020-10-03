@@ -5,6 +5,15 @@
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+body {
+    min-width: 1000px;
+    height: 100%;
+    background: url('../assignment2/bg.jpg') 0 0 no-repeat;
+    background-size: auto;
+    background-position:  center center;
+
+}
+
 .wrap {
     position: relative;
     width: 1000px;
@@ -165,6 +174,7 @@ h2 {
     margin-top: 46px;
     border: 1px solid lightgray;
     border-radius: 3px;
+    background-color: #ffffff;
 }
 
 section {
@@ -213,10 +223,19 @@ section {
     color: #9b9b9b;
 }
 
-.main_slogan p strong {
+.strongstyle1 {
     line-height: 28px;
     font-size: 22px;
     color: #f7941e;
+}
+
+.strongstyle2 {
+    line-height: 28px;
+    font-size: 19px;
+    text-align: center;
+    word-spacing: -1px;
+    letter-spacing: -1px;
+    color: #5d5d5d;
 }
 
 .main_contents {
@@ -272,4 +291,102 @@ section {
     font-size: 11px;
     line-height: 17px;
     word-wrap: break-word;
+}
+
+.contents_graph {
+    padding: 0;
+    min-width: 670px;
+    min-height: 450px;
+    margin: 8px 0;
+    background: url(../assignment2/graph.jpg) 0 0 no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.btn_container {
+    margin-top: 26px;
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 17px;
+    padding-right: 27px;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: .5px .5px 1.5px .5px #c6c6c6;
+}
+
+.btn:not(:last-child) {
+    margin-right: 4px;
+}
+
+i {
+    margin-right: 6px;
+}
+
+.btn1 {
+    background-color: #ff9501;
+}
+
+.btn1 span, .btn1 i{
+    color: #ffffff;
+}
+
+.btn2 {
+    border: .5px solid #d3d3d3;
+    background-color: #ffffff;
+}
+
+.btn2 span, .btn2 i {
+    color: #ff9501;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    color: #7f7f7f;
+    font-size: 10px;
+}
+
+footer ul li{
+    float: left;
+    margin-left: 13px;
+    list-style: none;
+}
+
+footer ul::after {
+    display: block;
+    content: "";
+}
+
+footer ul li::before {
+    content: "|";
+    padding-right: 10px;
+    font-size: 10px;
+    color: #c8c8c8;
+    clear: both;
+}
+
+footer ul li:first-child::before {
+    content: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+.selectbox_contents {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.selectbox_contents span {
+    margin-right: 16px;
 }
