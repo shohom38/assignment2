@@ -4,25 +4,150 @@
     box-sizing: border-box;
 }
 
-.topwrap {
+.wrap {
     position: relative;
     width: 1000px;
     margin: 0 auto;
 }
 
-#toplogo {
+#topwrap {
+    min-height: 100px;
+}
+
+.toplogo {
     font-size: 12px;
     position: absolute;
     top: 30px;
     left: 0;
 }
 
-#toplogo a{
+.toplogo a{
     display: block;
     width: 120px;
     height: 75px;
     overflow: hidden;
     padding-top: 75px;
-    background: url('../assignment/Haitaihtb2010.jpg') 0 0 no-repeat;
+    background: url('../Haitai/assignment/Haitaihtb2010.jpg') 0 0 no-repeat;
     background-size: 120px auto;
+}
+
+.navbar_container {
+}
+
+.topnavbar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 11px;
+}
+.topnavbar li {
+    padding: 7px 20px;
+}
+.topnavbar li a {
+    text-decoration: none;
+    color: black;
+}
+
+.topnavbar li:last-child {
+    font-size: 9px;
+    padding-top: 9px;
+    border-left: 2px solid #ff8c27;
+    border-right: 2px solid #ff8c27;
+    border-bottom: 2px solid #ff8c27;
+    border-radius: 0 0 10px 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    min-width: 790px;
+    min-height: 50px;
+    position: absolute;
+    top: 40px;
+    left: 170px;
+    font-size: 18px;
+    border-radius: 5px;
+    list-style: none;
+    background: linear-gradient(#ff9d45,#ff7800);
+}
+
+.navbar li a{
+    padding: 10px 50px;
+    line-height: 18px;
+    min-width: 155px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fcffff;
+}
+
+.navbar li a:first-child {
+    margin-left: 14px;
+}
+
+.navbar li a:hover {
+    background-color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgb(134, 134, 134);
+    color: #ff8c27;
+}
+
+#aside_wrap {
+    display: block;
+    float: left;
+    margin-top: 37px;
+    margin-right: 17px;
+    min-width: 150px;
+}
+
+h2 {
+    padding: 25px 0;
+    font-size: 34px;
+}
+
+.sidebar {
+    list-style: none;
+}
+
+.sidebar li{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.sidebar li a {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-decoration: none;
+    color: #f7941e;
+}
+
+.sidebar li:hover {
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px lightgray;
+    background: url(../assignment2/marker_sidebar.jpg) no-repeat;
+    background-size: auto;
+    background-position: left center;
+}
+
+#aside_wrap::after {
+    display: block;
+    content: "";
+}
+
+#main_wrap {
+    display: inline-block;
+    width: 790px;
+    min-height: 871px;
+    margin-top: 46px;
+    border: 1px solid lightgray;
+}
+
+section {
+    padding: 60px;
 }
