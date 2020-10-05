@@ -14,6 +14,7 @@ body {
 
 }
 
+
 .wrap {
     position: relative;
     width: 1000px;
@@ -117,13 +118,13 @@ body {
     display: block;
     float: left;
     margin-top: 37px;
-    margin-right: 17px;
+    margin-right: 20px;
     min-width: 150px;
 }
 
 h2 {
     padding: 25px 0;
-    font-size: 56px;
+    font-size: 54px;
     font-weight: 500;
     font-family: 'Nanum Brush Script', cursive;
 }
@@ -142,7 +143,7 @@ h2 {
 }
 
 .sidebar li a {
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 20px;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -318,7 +319,7 @@ section {
     cursor: pointer;
     padding-top: 12px;
     padding-bottom: 12px;
-    padding-left: 17px;
+    padding-left: 27px;
     padding-right: 27px;
     border: 0;
     border-radius: 3px;
@@ -348,6 +349,26 @@ i {
 
 .btn2 span, .btn2 i {
     color: #ff9501;
+}
+
+.confirmBtn {
+    width: 14px;
+    vertical-align: bottom;
+    margin-right: 6px;
+}
+
+.btn1-2 {
+    text-align: center;
+    padding-left: 17px;
+    padding-right: 27px;
+}
+
+.btn2-2 {
+    background-color: #ececec;
+}
+
+.btn2-2 span {
+    color: #a0a0a0;
 }
 
 footer {
@@ -512,11 +533,11 @@ dd ul li {
     min-height: 500px;
 }
 
-input {
+.contents_input {
     display: none;
 }
 
-label {
+.contents_label {
     display: inline-block;
     padding: 8px 40px;
     margin-right: -2px;
@@ -526,11 +547,11 @@ label {
     background-color: #c1c1c1;
 }
 
-label:hover {
+.contents_label:hover {
     cursor: pointer;
 }
 
-input:checked + label {
+.contents_input:checked + label {
     background-color: #ff9500;
     background-image: url('../assignment2/marker4.jpg');
     background-repeat: no-repeat;
@@ -556,3 +577,99 @@ input:checked + label {
     display: block;
 }
 
+.section_top2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #efefef;
+}
+
+.section_top2 p {
+    position: relative;
+    left: -35px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.main_slogan2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.box_main {
+    margin-bottom: 18px;
+}
+
+.flow_box {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.flow_box li {
+    width: 175px;
+    height: 80px;
+    padding-top: 34px;
+    padding-bottom: 24px;
+    padding-left: 80px;
+    text-align: left;
+    letter-spacing: -1px;
+    word-break: keep-all;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.block01 {
+    background: url('../assignment2/block01.png') 0 0 no-repeat;
+    background-position: -43px -33px;
+}
+
+.block02 {
+    background: url('../assignment2/block02.png') 0 0 no-repeat;
+    background-position: -43px -34px;
+}
+
+.block03 {
+    background: url('../assignment2/block03.png') 0 0 no-repeat;
+    background-position: -43px -34px;
+}
+
+.block04 {
+    background: url('../assignment2/block04.png') 0 0 no-repeat;
+    background-position: -43px -34px;
+}
+
+.form_contents {
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 23px;
+    border: 2px solid #ececec;
+}
+
+
+.strong_span strong {
+    font-size: 15px;
+    color: #f9af56;
+    padding: 8px 0;
+}
+
+#terms_form {
+    display: inline-block;
+    border-top: 1.5px dotted #dbdbdb;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    min-width: 622px;
+    font-size: 11px;
+    resize: none;
+}
+
+.chkbox {
+    display: inline-block;
+    min-width: 622px;
+    font-size: 11px;
+    text-align: right;
+}
