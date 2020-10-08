@@ -246,9 +246,12 @@ section {
 }
 
 .main_contents {
-    padding: 14px 24px;
-    border: 2px solid #ececec;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    min-width: 668px;
+    min-height: 436px;
+    padding: 3px 16px;
+    background-color: #ececec;
 }
 
 .contents_block {
@@ -672,4 +675,10 @@ dd ul li {
     min-width: 622px;
     font-size: 11px;
     text-align: right;
+}
+
+.wide_background {
+    min-width: 660px;
+    min-height: 436px;
+    background-color: #ffffff;
 }
