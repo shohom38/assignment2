@@ -173,8 +173,6 @@ h2 {
     width: 790px;
     min-height: 871px;
     margin-top: 46px;
-    border: 1px solid lightgray;
-    border-radius: 3px;
     background-color: #ffffff;
 }
 
@@ -246,9 +244,12 @@ section {
 }
 
 .main_contents {
-    padding: 14px 24px;
+    display: flex;
+    justify-content: center;
+    min-width: 668px;
+    min-height: 436px;
+    padding: 3px 16px;
     border: 2px solid #ececec;
-    border-radius: 5px;
 }
 
 .contents_block {
@@ -672,4 +673,32 @@ dd ul li {
     min-width: 622px;
     font-size: 11px;
     text-align: right;
+}
+
+.wide_background {
+    min-width: 660px;
+    min-height: 436px;
+    background-color: #ececec;
+}
+
+.top_rbox {
+    width: 790px;
+    height: 25px;
+    background: url('../assignment2/top_rbox.png') 0 0 no-repeat;
+    background-size: auto;
+    background-position: center 14px;
+}
+
+.main_rbox {
+    width: 790px;
+    background: url('../assignment2/main_rbox.png') 0 0 repeat-y;
+    background-size: contain;
+    background-position: center center;
+}
+
+.bottom_rbox {
+    width: 790px;
+    height: 25px;
+    background: url('../assignment2/bottom_rbox.png') 0 0 no-repeat;
+    background-position: center bottom;
 }
